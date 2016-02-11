@@ -1,0 +1,23 @@
+// To go in the course.json file
+
+	"_toolbox": {
+        "_isEnabled": true,
+        "_hideDrawerIcon": true,
+        "_items": [
+            {
+                "_icon": "icon-folder",
+                "_ariaLabel": "Open course resources.",
+                "_trigger": "resources:showResources"
+            },
+            {
+                "_icon": "icon-search",
+                "_ariaLabel": "Open the search facility.",
+                "_trigger": "resources:showSearch"
+            },
+            {
+                "_icon": "icon-documents",
+                "_ariaLabel": "Open course glossary.",
+                "_trigger": "glossary:showGlossary"
+            }
+        ]
+    },
