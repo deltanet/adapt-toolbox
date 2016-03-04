@@ -10,7 +10,7 @@ define(function(require) {
         var toolboxModel = new Backbone.Model(toolboxModel);
 
         Adapt.on('navigationView:postRender', function(navigationView) {
-            navigationView.$('.navigation-inner').prepend(new ToolboxView({
+            navigationView.$('.navigation-drawer-toggle-button').after(new ToolboxView({
                 model: toolboxModel,
                 collection: toolboxCollection
             }).$el);
