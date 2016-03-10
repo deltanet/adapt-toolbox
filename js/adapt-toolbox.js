@@ -15,10 +15,17 @@ define(function(require) {
                 collection: toolboxCollection
             }).$el);
 
-            // Hide Drawer icon and drawer back arrow
-            if(Adapt.course.get('_toolbox')._hideDrawerIcon){
-                $('.drawer-back').css('display','none');
-                $('.navigation-drawer-toggle-button').css('display','none');
+            // Set layout based on device size
+            if (Adapt.device.screenSize === 'large') {
+                $('.toolbox-inner').css('display','block');
+                if(Adapt.course.get('_toolbox')._hideDrawerIcon) {
+                    $('.drawer-back').css('display','none');
+                    $('.navigation-drawer-toggle-button').css('display','none');
+                }
+            } else {
+                $('.toolbox-inner').css('display','none');
+                $('.drawer-back').css('display','block');
+                $('.navigation-drawer-toggle-button').css('display','block');
             }
 
         });

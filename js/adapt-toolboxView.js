@@ -7,7 +7,7 @@ define(function(require) {
 
         className: 'toolbox',
 
-        initialize: function(options) {
+        initialize: function() {
             this.render();
         },
 
@@ -15,7 +15,7 @@ define(function(require) {
             'click .toolbox-button': 'onItemClicked'
         },
 
-        render: function(setScore) {
+        render: function() {
 
             this.listenTo(Adapt, 'device:changed', this.reRender, this);
             
