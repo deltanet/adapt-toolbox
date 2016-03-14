@@ -33,10 +33,19 @@ define(function(require) {
                     $('.drawer-back').css('display','none');
                     $('.navigation-drawer-toggle-button').css('display','none');
                 }
-            } else {
-                $('.toolbox-inner').css('display','none');
-                $('.drawer-back').css('display','block');
-                $('.navigation-drawer-toggle-button').css('display','block');
+            }
+            if (Adapt.device.screenSize != 'large') {
+                if (Adapt.course.get('_toolbox')._disableOnMobile) {
+                    $('.toolbox-inner').css('display','none');
+                    $('.drawer-back').css('display','block');
+                    $('.navigation-drawer-toggle-button').css('display','block');
+                } else {
+                    $('.toolbox-inner').css('display','block');
+                    if(Adapt.course.get('_toolbox')._hideDrawerIcon) {
+                        $('.drawer-back').css('display','none');
+                        $('.navigation-drawer-toggle-button').css('display','none');
+                    }
+                }
             }
         },
 

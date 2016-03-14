@@ -3,6 +3,7 @@
 	"_toolbox": {
         "_isEnabled": true,
         "_hideDrawerIcon": true,
+        "_disableOnMobile": true,
         "_items": [
             {
                 "_icon": "icon-folder",
