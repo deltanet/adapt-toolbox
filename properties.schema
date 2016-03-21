@@ -13,7 +13,77 @@
           "properties":{}
         },
         "course": {
-          "type":"object"
+          "type": "object",
+          "properties": {
+            "_toolbox": {
+              "type": "object",
+              "required": false,
+              "legend": "Search",
+              "properties": {
+                "_isEnabled": {
+                  "type":"boolean",
+                  "required":true,
+                  "title": "Enabled",
+                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "validators": [],
+                  "help": "Turns Toolbox on and off. Acceptable values are true and false."
+                },
+                "_hideDrawerIcon": {
+                  "type":"boolean",
+                  "required":true,
+                  "default": false,
+                  "title": "Hide Drawer Icon",
+                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "validators": []
+                },
+                 "_disableOnMobile": {
+                  "type":"boolean",
+                  "required":true,
+                  "default": false,
+                  "title": "Disable on Mobile",
+                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "validators": []
+                },
+                "_items": {
+                  "type": "array",
+                  "required": true,
+                  "title": "Items",
+                  "items": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "_icon": {
+                        "type": "string",
+                        "required": true,
+                        "inputType": "Text",
+                        "title": "Item Icon",
+                        "default": "",
+                        "validators": ["required"],
+                        "help": "Enter a CSS icon for this item, e.g icon-folder"
+                      },
+                      "_ariaLabel": {
+                        "type": "string",
+                        "required": true,
+                        "inputType": "Text",
+                        "title": "Item Aria Label",
+                        "default": "",
+                        "validators": ["required"]
+                      },
+                      "_trigger": {
+                        "type": "string",
+                        "required": true,
+                        "inputType": "Text",
+                        "title": "Item Trigger",
+                        "default": "",
+                        "validators": ["required"],
+                        "help": "Enter the trigger for this item, e.g resources:showResources"
+                      }
+                    }
+                  }
+                }
+              }
+            }        
+          }
         },
         "contentobject": {
           "type":"object"
