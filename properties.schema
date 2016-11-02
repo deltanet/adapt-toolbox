@@ -67,7 +67,8 @@
                         "inputType": "Text",
                         "title": "Item Aria Label",
                         "default": "",
-                        "validators": ["required"]
+                        "validators": ["required"],
+                        "translatable": true
                       },
                       "_trigger": {
                         "type": "string",
