@@ -18,7 +18,7 @@ define(function(require) {
         render: function() {
 
             this.listenTo(Adapt, 'device:changed', this.reRender, this);
-            
+
             var data = this.collection.toJSON();
             var template = Handlebars.templates['toolbox'];
             this.$el.html(template({
@@ -54,8 +54,25 @@ define(function(require) {
             var $item = $(event.currentTarget);
             var itemModel = this.model.get('_items')[$item.index()];
 
-            Adapt.trigger(itemModel._trigger);
+            var trigger = itemModel._triggerOption;
+            var customTrigger = itemModel._trigger;
 
+            // Check for triggerOption
+            if(!customTrigger=="") {
+              Adapt.trigger(customTrigger);
+            } else {
+              switch (trigger) {
+              case "Show Resources":
+                Adapt.trigger("resources:showResources");
+                break;
+              case "Show Search":
+                Adapt.trigger("resources:showSearch");
+                break;
+              case "Show Glossary":
+                Adapt.trigger("glossary:showGlossary");
+                break;
+            }
+          }
         }
 
     });

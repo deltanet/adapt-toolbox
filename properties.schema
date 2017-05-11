@@ -67,17 +67,26 @@
                         "inputType": "Text",
                         "title": "Item Aria Label",
                         "default": "",
-                        "validators": ["required"],
+                        "validators": [],
                         "translatable": true
+                      },
+                      "_triggerOption": {
+                        "type": "string",
+                        "required": true,
+                        "default": "",
+                        "title": "Item Trigger",
+                        "inputType": {"type": "Select", "options": ["Show Resources", "Show Glossary", "Show Search", "Custom"]},
+                        "validators": [],
+                        "help": "Select a pre-defined or custom trigger for this item"
                       },
                       "_trigger": {
                         "type": "string",
-                        "required": true,
+                        "required": false,
                         "inputType": "Text",
-                        "title": "Item Trigger",
+                        "title": "Custom Trigger",
                         "default": "",
-                        "validators": ["required"],
-                        "help": "Enter the trigger for this item, e.g resources:showResources"
+                        "validators": [],
+                        "help": "Enter the custom trigger for this item"
                       }
                     }
                   }
