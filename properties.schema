@@ -72,7 +72,7 @@
                       },
                       "_triggerOption": {
                         "type": "string",
-                        "required": true,
+                        "required": false,
                         "default": "",
                         "title": "Item Trigger",
                         "inputType": {"type": "Select", "options": ["Show Resources", "Show Glossary", "Show Search", "Custom"]},
