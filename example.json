@@ -8,16 +8,19 @@
             {
                 "_icon": "icon-folder",
                 "_ariaLabel": "Open course resources.",
+								"_triggerOption": "Show Resources",
                 "_trigger": "resources:showResources"
             },
             {
                 "_icon": "icon-search",
                 "_ariaLabel": "Open the search facility.",
+								"_triggerOption": "Show Search",
                 "_trigger": "resources:showSearch"
             },
             {
                 "_icon": "icon-documents",
                 "_ariaLabel": "Open course glossary.",
+								"_triggerOption": "Show Glossary",
                 "_trigger": "glossary:showGlossary"
             }
         ]
