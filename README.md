@@ -45,7 +45,7 @@ Several elements of **Toolbox** have been assigned a label using the [aria-label
 No known limitations.
 
 ----------------------------
-**Version number:**  2.0.3  
+**Version number:**  2.0.6  
 **Framework versions supported:**  2.0.6    
 **Author / maintainer:** DeltaNet with [contributors](https://github.com/deltanet/adapt-toolbox/graphs/contributors)     
 **Accessibility support:** Yes  
