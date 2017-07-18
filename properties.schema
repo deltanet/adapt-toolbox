@@ -23,26 +23,29 @@
                 "_isEnabled": {
                   "type":"boolean",
                   "required":true,
-                  "title": "Enabled",
-                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "default": false,
+                  "title": "Is Enabled",
+                  "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Turns Toolbox on and off. Acceptable values are true and false."
+                  "help": "Controls whether the Toolbox extension is enabled or disabled."
                 },
                 "_hideDrawerIcon": {
                   "type":"boolean",
                   "required":true,
                   "default": false,
                   "title": "Hide Drawer Icon",
-                  "inputType": { "type": "Boolean", "options": [false, true]},
-                  "validators": []
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Controls whether the default Drawer icon is hidden."
                 },
                  "_disableOnMobile": {
                   "type":"boolean",
                   "required":true,
                   "default": false,
                   "title": "Disable on Mobile",
-                  "inputType": { "type": "Boolean", "options": [false, true]},
-                  "validators": []
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Controls whether the Toolbox extension is disabled on small devices."
                 },
                 "_items": {
                   "type": "array",
