@@ -25,7 +25,7 @@ The Toolbox attribute group at course level contains values for **_isEnabled**, 
 
 >**_hideDrawerIcon** (boolean):  Sets whether the default Drawer icon is hidden.  
 
->**_disableOnMobile** (boolean):  Sets whether the **Toolbox** extension is disabled on small devices.  
+>**_disableOnMobile** (boolean):  Sets whether the **Toolbox** extension is disabled on small devices.
 
 >**_items** (array): Multiple items may be created. Each item represents another Adapt Extension and contains values for **_icon**, **_ariaLabel**, **_triggerOption**, and **_trigger**.
 
@@ -36,6 +36,9 @@ The Toolbox attribute group at course level contains values for **_isEnabled**, 
 >>**_triggerOption** (string):  Defines the Adapt trigger of the button. Options are `"Show Resources"`, `"Show Glossary"`, `"Show Search"`, and `"Custom"`.  
 
 >>**_trigger** (string):  This defines the Adapt trigger if `"Custom"` is used as the **_triggerOption**.  
+
+>**_iconOrder** (number): Defines the order the icon will appear in the toolbox. Numbers appear from left to right in ascending order.
+
 
 ### Accessibility
 Several elements of **Toolbox** have been assigned a label using the [aria-label](https://github.com/adaptlearning/adapt_framework/wiki/Aria-Labels) attribute: **Toolbox**. These labels are not visible elements. They are utilized by assistive technology such as screen readers.  
