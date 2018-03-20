@@ -26,6 +26,7 @@ define(function(require) {
     },
 
     applyIconOrder: function(data) {
+      if (!data[0]._iconOrder) return data;
       return data.sort(function(obj1, obj2) {
         return obj2._iconOrder - obj1._iconOrder;
       });
