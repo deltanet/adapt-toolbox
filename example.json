@@ -9,21 +9,21 @@
       "_ariaLabel": "Open course resources.",
       "_triggerOption": "Show Resources",
       "_trigger": "resources:showResources",
-			"_iconOrder": 0
+      "_iconOrder": 0
     },
     {
       "_icon": "icon-search",
       "_ariaLabel": "Open the search facility.",
       "_triggerOption": "Show Search",
       "_trigger": "resources:showSearch",
-			"_iconOrder": 1
+      "_iconOrder": 1
     },
     {
       "_icon": "icon-documents",
       "_ariaLabel": "Open course glossary.",
       "_triggerOption": "Show Glossary",
       "_trigger": "glossary:showGlossary",
-			"_iconOrder": 2
+      "_iconOrder": 2
     }
   ]
 },

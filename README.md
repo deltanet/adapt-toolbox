@@ -39,7 +39,6 @@ The Toolbox attribute group at course level contains values for **_isEnabled**, 
 
 >**_iconOrder** (number): Defines the order the icon will appear in the toolbox. Numbers appear from left to right in ascending order.
 
-
 ### Accessibility
 Several elements of **Toolbox** have been assigned a label using the [aria-label](https://github.com/adaptlearning/adapt_framework/wiki/Aria-Labels) attribute: **Toolbox**. These labels are not visible elements. They are utilized by assistive technology such as screen readers.  
 
