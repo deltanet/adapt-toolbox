@@ -24,6 +24,13 @@
       "_triggerOption": "Show Glossary",
       "_trigger": "glossary:showGlossary",
       "_iconOrder": 2
+    },
+    {
+      "_icon": "icon-question",
+      "_ariaLabel": "Open course help.",
+      "_triggerOption": "Show Help",
+      "_trigger": "help:showHelp",
+      "_iconOrder": 3
     }
   ]
-},
+}

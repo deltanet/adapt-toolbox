@@ -68,6 +68,9 @@ define(function(require) {
         Adapt.trigger(customTrigger);
       } else {
         switch (trigger) {
+          case "Show Help":
+            Adapt.trigger("help:showHelp");
+            break;
           case "Show Resources":
             Adapt.trigger("resources:showResources");
             break;

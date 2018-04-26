@@ -78,7 +78,7 @@
                         "required": false,
                         "default": "",
                         "title": "Item Trigger",
-                        "inputType": {"type": "Select", "options": ["Show Resources", "Show Glossary", "Show Search", "Custom"]},
+                        "inputType": {"type": "Select", "options": ["Show Resources", "Show Glossary", "Show Search", "Show Help", "Custom"]},
                         "validators": [],
                         "help": "Select a pre-defined or custom trigger for this item"
                       },

@@ -33,7 +33,7 @@ The Toolbox attribute group at course level contains values for **_isEnabled**, 
 
 >>**_ariaLabel** (string):  This text becomes the button icon’s `Aria label` attribute.  
 
->>**_triggerOption** (string):  Defines the Adapt trigger of the button. Options are `"Show Resources"`, `"Show Glossary"`, `"Show Search"`, and `"Custom"`.  
+>>**_triggerOption** (string):  Defines the Adapt trigger of the button. Options are `"Show Resources"`, `"Show Glossary"`, `"Show Search"`, `"Show Help"`, and `"Custom"`.  
 
 >>**_trigger** (string):  This defines the Adapt trigger if `"Custom"` is used as the **_triggerOption**.  
 
@@ -47,7 +47,7 @@ Several elements of **Toolbox** have been assigned a label using the [aria-label
 No known limitations.
 
 ----------------------------
-**Version number:**  2.0.6  
+**Version number:**  2.0.7  
 **Framework versions supported:**  2.0.6    
 **Author / maintainer:** DeltaNet with [contributors](https://github.com/deltanet/adapt-toolbox/graphs/contributors)     
 **Accessibility support:** Yes  
