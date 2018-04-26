@@ -90,6 +90,15 @@
                         "default": "",
                         "validators": [],
                         "help": "Enter the custom trigger for this item"
+                      },
+                      "_iconOrder": {
+                        "type": "number",
+                        "required": false,
+                        "inputType": "Number",
+                        "title": "Icon number",
+                        "default": "",
+                        "validators": [],
+                        "help": "Choose the order the icon will appear in the toolbox. Icons appear from left to right in ascending order."
                       }
                     }
                   }
