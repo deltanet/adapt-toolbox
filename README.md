@@ -48,7 +48,7 @@ No known limitations.
 
 ----------------------------
 **Version number:**  2.0.8  
-**Framework versions supported:**  2.0.6    
+**Framework versions supported:**  2+    
 **Author / maintainer:** DeltaNet with [contributors](https://github.com/deltanet/adapt-toolbox/graphs/contributors)     
 **Accessibility support:** Yes  
 **RTL support:** Yes     
