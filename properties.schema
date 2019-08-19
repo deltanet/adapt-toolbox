@@ -64,6 +64,15 @@
                         "validators": ["required"],
                         "help": "Enter a CSS icon for this item, e.g icon-folder"
                       },
+                      "_ariaHidden": {
+                        "type":"boolean",
+                        "required":false,
+                        "default": false,
+                        "title": "Aria Hidden",
+                        "inputType": "Checkbox",
+                        "validators": [],
+                        "help": "Controls whether the icon will be inaccessible to a screen reader."
+                      },
                       "_ariaLabel": {
                         "type": "string",
                         "required": true,
