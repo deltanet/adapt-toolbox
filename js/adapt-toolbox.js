@@ -42,7 +42,7 @@ define([
         },
 
         renderNavigationView: function(navigationView) {
-            navigationView.$('.navigation-drawer-toggle-button').after(new ToolboxView({
+            navigationView.$('.nav__drawer-btn').after(new ToolboxView({
                 model: this.model,
                 collection: this.collection
             }).$el);
