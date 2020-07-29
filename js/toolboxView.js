@@ -12,7 +12,7 @@ define([
         },
 
         events: {
-            'click .toolbox-button': 'onItemClicked'
+            'click .toolbox_btn': 'onItemClicked'
         },
 
         render: function() {
@@ -43,21 +43,21 @@ define([
             if (Adapt.device.screenSize === 'large') {
                 this.$('.toolbox-inner').css('display', 'block');
                 if (Adapt.course.get('_toolbox')._hideDrawerIcon) {
-                    $('.drawer-back').css('display', 'none');
-                    $('.navigation-drawer-toggle-button').css('display', 'none');
+                    $('.drawer__back-btn').css('display', 'none');
+                    $('.nav__drawer-btn').css('display', 'none');
                 }
             }
 
             if (Adapt.device.screenSize != 'large') {
                 if (Adapt.course.get('_toolbox')._disableOnMobile) {
                     this.$('.toolbox-inner').css('display', 'none');
-                    $('.drawer-back').css('display', 'block');
-                    $('.navigation-drawer-toggle-button').css('display', 'block');
+                    $('.drawer__back-btn').css('display', 'block');
+                    $('.nav__drawer-btn').css('display', 'block');
                 } else {
                     this.$('.toolbox-inner').css('display', 'block');
                     if (Adapt.course.get('_toolbox')._hideDrawerIcon) {
-                        $('.drawer-back').css('display', 'none');
-                        $('.navigation-drawer-toggle-button').css('display', 'none');
+                        $('.drawer__back-btn').css('display', 'none');
+                        $('.nav__drawer-btn').css('display', 'none');
                     }
                 }
             }
