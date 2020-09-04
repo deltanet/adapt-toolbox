@@ -1,22 +1,14 @@
 .toolbox {
-    .toolbox-inner {
-        float: right;
-        .dir-rtl & {
-            float: left;
-        }
+  &__inner {
+    float: right;
+    .dir-rtl & {
+      float: left;
     }
-    .toolbox_btn {
-    	float: right;
-      padding: @icon-padding;
-      background-color: @nav-icon;
-      color: @nav-icon-inverted;
-        .dir-rtl & {
-            float: left;
-        }
-        .no-touch &:hover {
-          background-color: @nav-icon-hover;
-          color: @nav-icon-inverted-hover;
-          .transition(background-color @duration ease-in, color @duration ease-in;);
-        }
+  }
+  &__btn {
+    float: right;
+    .dir-rtl & {
+      float: left;
     }
+  }
 }

@@ -1,7 +1,7 @@
-<div class="toolbox-inner">
+<div class="toolbox__inner">
 {{#each toolbox}}
-	<button class="nav__btn toolbox_btn" aria-label="{{_ariaLabel}}" data-event="{{_trigger}}">
-    <div class="icon {{_icon}}"></div>
+	<button class="btn-icon nav__btn toolbox__btn js-toolbox-item-click"{{#if _ariaLabel}} aria-label="{{_ariaLabel}}"{{/if}}{{#unless _ariaLabel}} aria-hidden="true"{{/unless}}>
+		<div class="icon {{_icon}}"></div>
 	</button>
 {{/each}}
 </div>

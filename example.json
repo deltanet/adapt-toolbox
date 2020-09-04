@@ -4,7 +4,8 @@
   "_isEnabled": true,
   "_hideDrawerIcon": true,
   "_disableOnMobile": true,
-  "_items": [{
+  "_items": [
+    {
       "_icon": "icon-folder",
       "_ariaLabel": "Open course resources.",
       "_triggerOption": "Show Resources",
