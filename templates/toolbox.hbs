@@ -1,5 +1,7 @@
-<div class="toolbox-inner">
+<div class="toolbox__inner">
 {{#each toolbox}}
-	<button class="base toolbox-button icon {{_icon}}"{{#if _ariaLabel}} aria-label="{{_ariaLabel}}"{{/if}}{{#unless _ariaLabel}} aria-hidden="true"{{/unless}}></button>
+	<button class="btn-icon nav__btn toolbox__btn js-toolbox-item-click"{{#if _ariaLabel}} aria-label="{{_ariaLabel}}"{{/if}}{{#unless _ariaLabel}} aria-hidden="true" tabindex="-1"{{/unless}}>
+		<div class="icon {{_icon}}"></div>
+	</button>
 {{/each}}
 </div>

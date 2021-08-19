@@ -1,57 +1,57 @@
 define([
-    'core/js/adapt',
-    './toolboxView'
-], function(Adapt, ToolboxView) {
+  'core/js/adapt',
+  './toolboxView'
+], function (Adapt, ToolboxView) {
 
-    var Toolbox = _.extend({
+  var Toolbox = _.extend({
 
-        initialize: function() {
-            this.listenToOnce(Adapt, 'app:dataReady', this.onAppDataReady);
-        },
+    initialize: function () {
+      this.listenToOnce(Adapt, 'app:dataReady', this.onAppDataReady);
+    },
 
-        onAppDataReady: function() {
-            this.listenTo(Adapt.config, 'change:_activeLanguage', this.onLangChange);
+    onAppDataReady: function () {
+      this.listenTo(Adapt.config, 'change:_activeLanguage', this.onLangChange);
 
-            if (!Adapt.course.get('_toolbox')) return;
+      if (!Adapt.course.get('_toolbox')) return;
 
-            if (Adapt.course.get('_toolbox')._isEnabled){
-                this.setupToolbox();
-                this.setupListeners();
-            }
-        },
+      if (!Adapt.course.get('_toolbox')._isEnabled) return;
 
-        onLangChange: function() {
-            this.removeListeners();
-            this.listenToOnce(Adapt, 'app:dataReady', this.onAppDataReady);
-        },
+      this.setupToolbox();
+      this.setupListeners();
+    },
 
-        setupToolbox: function() {
-            this.config = Adapt.course.get('_toolbox');
+    onLangChange: function () {
+      this.removeListeners();
+      this.listenToOnce(Adapt, 'app:dataReady', this.onAppDataReady);
+    },
 
-            this.model = new Backbone.Model(this.config);
-            this.collection = new Backbone.Collection(this.config._items);
-        },
+    setupToolbox: function () {
+      this.config = Adapt.course.get('_toolbox');
 
-        setupListeners: function() {
-            this.listenTo(Adapt, 'navigationView:postRender', this.renderNavigationView);
-        },
+      this.model = new Backbone.Model(this.config);
+      this.collection = new Backbone.Collection(this.config._items);
+    },
 
-        removeListeners: function() {
-            this.stopListening(Adapt, 'navigationView:postRender', this.renderNavigationView);
-            this.stopListening(Adapt.config, 'change:_activeLanguage', this.onLangChange);
-        },
+    setupListeners: function () {
+      this.listenTo(Adapt, 'navigationView:postRender', this.renderNavigationView);
+    },
 
-        renderNavigationView: function(navigationView) {
-            navigationView.$('.navigation-drawer-toggle-button').after(new ToolboxView({
-                model: this.model,
-                collection: this.collection
-            }).$el);
-        }
+    removeListeners: function () {
+      this.stopListening(Adapt, 'navigationView:postRender', this.renderNavigationView);
+      this.stopListening(Adapt.config, 'change:_activeLanguage', this.onLangChange);
+    },
 
-    }, Backbone.Events);
+    renderNavigationView: function () {
+      $('.nav__drawer-btn').after(new ToolboxView({
+        model: this.model,
+        collection: this.collection
+      }).$el);
+    }
 
-    Toolbox.initialize();
+  }, Backbone.Events);
 
-    return Toolbox;
+  Toolbox.initialize();
+
+  return Toolbox;
 
 });

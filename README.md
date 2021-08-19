@@ -1,5 +1,4 @@
-adapt-toolbox
-===========
+# adapt-toolbox
 
 **Toolbox** is an *extension* for the the [Adapt framework](https://github.com/adaptlearning/adapt_framework).   
 
@@ -47,8 +46,8 @@ Several elements of **Toolbox** have been assigned a label using the [aria-label
 No known limitations.
 
 ----------------------------
-**Version number:**  3.0.0  
-**Framework versions supported:**  4+    
+**Version number:**  4.0.0  
+**Framework versions supported:**  5+    
 **Author / maintainer:** DeltaNet with [contributors](https://github.com/deltanet/adapt-toolbox/graphs/contributors)     
 **Accessibility support:** Yes  
 **RTL support:** Yes     

@@ -1,8 +1,8 @@
 {
   "name": "adapt-toolbox",
   "repository": "git://github.com/deltanet/adapt-toolbox",
-  "version": "3.0.0",
-  "framework": ">=4",
+  "version": "4.0.0",
+  "framework": ">=5",
   "homepage": "https://github.com/deltanet/adapt-toolbox",
   "issues": "https://github.com/deltanet/adapt-toolbox/issues",
   "displayName" : "Toolbox",
@@ -13,6 +13,6 @@
     "adapt-plugin",
     "adapt-extension"
   ],
-  "license": "GPLv3",
+  "license": "GPL-3.0",
   "targetAttribute": "_toolbox"
 }
