@@ -96,9 +96,9 @@
                         "required": false,
                         "inputType": "Number",
                         "title": "Icon number",
-                        "default": "",
-                        "validators": [],
-                        "help": "Choose the order the icon will appear in the toolbox. Icons appear from left to right in ascending order."
+                        "default": 0,
+                        "validators": ["number"],
+                        "help": "Choose the order the icon will appear in the toolbox from left to right"
                       }
                     }
                   }

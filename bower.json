@@ -2,7 +2,7 @@
   "name": "adapt-toolbox",
   "repository": "git://github.com/deltanet/adapt-toolbox",
   "version": "4.0.0",
-  "framework": ">=5",
+  "framework": ">=5.8",
   "homepage": "https://github.com/deltanet/adapt-toolbox",
   "issues": "https://github.com/deltanet/adapt-toolbox/issues",
   "displayName" : "Toolbox",
