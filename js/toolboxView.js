@@ -1,4 +1,5 @@
 import Adapt from 'core/js/adapt';
+import device from 'core/js/device';
 
 export default class ToolboxView extends Backbone.View {
 
@@ -39,7 +40,7 @@ export default class ToolboxView extends Backbone.View {
   }
 
   updateLayout() {
-    if (Adapt.device.screenSize === 'large') {
+    if (device.screenSize === 'large') {
       this.$('.toolbox__inner').css('display', 'block');
 
       if (Adapt.course.get('_toolbox')._hideDrawerIcon) {
@@ -48,7 +49,7 @@ export default class ToolboxView extends Backbone.View {
       }
     }
 
-    if (Adapt.device.screenSize != 'large') {
+    if (device.screenSize != 'large') {
       if (Adapt.course.get('_toolbox')._disableOnMobile) {
         this.$('.toolbox__inner').css('display', 'none');
         $('.drawer__back-btn').css('display', 'block');
